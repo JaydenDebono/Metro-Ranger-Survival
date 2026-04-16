@@ -90,7 +90,7 @@ title = Label(
     my_window,
     text = "Survival resource manager",
     fg = "black",
-    bg = "white",
+    bg = "DeepSkyBlue",
     height = 3,
     width = 30,
     font = ("Courier" , 25 , "bold")
@@ -208,7 +208,7 @@ def button_clicked():
             text = welcome_message,
             width= 100,
             height = 30,
-            bg = "grey"
+            bg = "DeepSkyBlue"
         )
         continue_button.config(
             text = "Enter The Metro"
@@ -339,11 +339,11 @@ def move_funct():
             #Turns the resource bar red if health goes below 20
             elif health <= 20 or status == "suffocating":
                 resource_bar.config(
-                    bg = "red"
+                    bg = "#EF233C"
                 )
             if health >20:
                             resource_bar.config(
-                    bg = "black"
+                    bg="black"
                 )
 
     #Resets labels
@@ -524,8 +524,8 @@ move_button = Button (
     width = 40,
     height = 10,
     font=("Courier", 20 , "bold"), 
-    bg = "grey",
-    fg = "blue",
+    bg = "DarkSlateGray",
+    fg = "black",
     command=move_funct
 )
 
